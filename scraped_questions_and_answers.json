@@ -1,0 +1,1091 @@
+{
+    "Which keyword prevents modification of a variable?": {
+        "options": {
+            "1": "final",
+            "2": "immutable",
+            "3": "constant",
+            "4": "const"
+        },
+        "answer": "1"
+    },
+    "Which CSS property is used to create space between the border and the content of an element?": {
+        "options": {
+            "1": "margin",
+            "2": "padding",
+            "3": "spacing",
+            "4": "border-spacing"
+        },
+        "answer": "2"
+    },
+    "Which tag is used to create a line break in HTML?": {
+        "options": {
+            "1": "break",
+            "2": "lb",
+            "3": "br",
+            "4": "line"
+        },
+        "answer": "3"
+    },
+    "Which keyword is used to declare a variable in JavaScript?": {
+        "options": {
+            "1": "var",
+            "2": "int",
+            "3": "const",
+            "4": "both A and C"
+        },
+        "answer": "4"
+    },
+    "Which keyword is used to declare a constant in C?": {
+        "options": {
+            "1": "const",
+            "2": "constant",
+            "3": "define",
+            "4": "fix"
+        },
+        "answer": "1"
+    },
+    "What is the output: printf(\"%d\", 'A' + 1);": {
+        "options": {
+            "1": "66",
+            "2": "B",
+            "3": "A1",
+            "4": "Compilation Error"
+        },
+        "answer": "1"
+    },
+    "Which header file is required for cout in C++?": {
+        "options": {
+            "1": "stdio.h",
+            "2": "conio.h",
+            "3": "iostream",
+            "4": "stdlib.h"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a valid pointer declaration in C?": {
+        "options": {
+            "1": "int *ptr;",
+            "2": "int ptr*;",
+            "3": "ptr int*;",
+            "4": "*int ptr;"
+        },
+        "answer": "1"
+    },
+    "In CSS, what is the default value for the position property?": {
+        "options": {
+            "1": "static",
+            "2": "relative",
+            "3": "absolute",
+            "4": "fixed"
+        },
+        "answer": "1"
+    },
+    "Which method is used to remove the last element from an array in JavaScript?": {
+        "options": {
+            "1": "remove()",
+            "2": "delete()",
+            "3": "pop()",
+            "4": "splice()"
+        },
+        "answer": "3"
+    },
+    "What is the output of typeof \"hello\" in JavaScript?": {
+        "options": {
+            "1": "text",
+            "2": "string",
+            "3": "character",
+            "4": "word"
+        },
+        "answer": "2"
+    },
+    "What does the return statement do in a function in C?": {
+        "options": {
+            "1": "Terminates the program",
+            "2": "Exits from a loop",
+            "3": "Returns a value from a function",
+            "4": "Starts the function"
+        },
+        "answer": "3"
+    },
+    "Which concept means “one name, many forms”?": {
+        "options": {
+            "1": "Encapsulation",
+            "2": "Polymorphism",
+            "3": "Inheritance",
+            "4": "Abstraction"
+        },
+        "answer": "2"
+    },
+    "Which of the following is not a block-level element?": {
+        "options": {
+            "1": "div",
+            "2": "p",
+            "3": "span",
+            "4": "section"
+        },
+        "answer": "3"
+    },
+    "What is the time complexity of list.append()?": {
+        "options": {
+            "1": "O(1)",
+            "2": "O(n)",
+            "3": "O(log n)",
+            "4": "O(n log n)"
+        },
+        "answer": "1"
+    },
+    "What is the output of bool(0.0)?": {
+        "options": {
+            "1": "True",
+            "2": "False",
+            "3": "None",
+            "4": "Error"
+        },
+        "answer": "2"
+    },
+    "Which data structure is best for implementing priority queues?": {
+        "options": {
+            "1": "Array",
+            "2": "Stack",
+            "3": "Linked List",
+            "4": "Heap"
+        },
+        "answer": "4"
+    },
+    "What is the output of \"5\" * 3 in Python?": {
+        "options": {
+            "1": "15",
+            "2": "555",
+            "3": "33",
+            "4": "333"
+        },
+        "answer": "2"
+    },
+    "Directed graph cycle detect?": {
+        "options": {
+            "1": "DFS+Stack",
+            "2": "BFS",
+            "3": "Sort",
+            "4": "Binary Search"
+        },
+        "answer": "1"
+    },
+    "What is the main advantage of inheritance?": {
+        "options": {
+            "1": "Improved performance",
+            "2": "Reusability of code",
+            "3": "Overriding constructors",
+            "4": "Memory allocation"
+        },
+        "answer": "2"
+    },
+    "Which of the following data types is used to store a decimal number in C?": {
+        "options": {
+            "1": "int",
+            "2": "char",
+            "3": "float",
+            "4": "double"
+        },
+        "answer": "3"
+    },
+    "What does HTML stand for?": {
+        "options": {
+            "1": "Hyper Trainer Marking Language",
+            "2": "Hyper Text Marketing Language",
+            "3": "Hyper Text Markup Language",
+            "4": "Hyper Tool Multi Language"
+        },
+        "answer": "3"
+    },
+    "What will be the result of the expression 3 * 'Python'?": {
+        "options": {
+            "1": "PythonPythonPython",
+            "2": "PythonPython",
+            "3": "3Python",
+            "4": "Error"
+        },
+        "answer": "1"
+    },
+    "Base class is also called?": {
+        "options": {
+            "1": "Superclass",
+            "2": "Subclass",
+            "3": "Child class",
+            "4": "Derived class"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a method to optimize frontend performance?": {
+        "options": {
+            "1": "Lazy loading",
+            "2": "Code splitting",
+            "3": "Image optimization",
+            "4": "All of the above"
+        },
+        "answer": "4"
+    },
+    "How do you add a background color in CSS?": {
+        "options": {
+            "1": "color: red;",
+            "2": "bgcolor: red;",
+            "3": "background-color: red;",
+            "4": "background: redcolor;"
+        },
+        "answer": "3"
+    },
+    "Which keyword is used to define a user-defined data type in C?": {
+        "options": {
+            "1": "typedef",
+            "2": "struct",
+            "3": "enum",
+            "4": "union"
+        },
+        "answer": "1"
+    },
+    "What is the value of sizeof(int) in most 32-bit compilers?": {
+        "options": {
+            "1": "2 bytes",
+            "2": "4 bytes",
+            "3": "8 bytes",
+            "4": "1 byte"
+        },
+        "answer": "2"
+    },
+    "What does [::-1] do on a list?": {
+        "options": {
+            "1": "Sort it",
+            "2": "Reverse",
+            "3": "Rotate",
+            "4": "Shuffle"
+        },
+        "answer": "2"
+    },
+    "Which of the following data types can be used as keys in a Python dictionary?": {
+        "options": {
+            "1": "List",
+            "2": "Dictionary",
+            "3": "String",
+            "4": "Set"
+        },
+        "answer": "3"
+    },
+    "Which HTML element is used to define important text?": {
+        "options": {
+            "1": "em",
+            "2": "strong",
+            "3": "mark",
+            "4": "highlight"
+        },
+        "answer": "2"
+    },
+    "What is the output if int a = 5/2;?": {
+        "options": {
+            "1": "2.5",
+            "2": "2",
+            "3": "3",
+            "4": "0"
+        },
+        "answer": "2"
+    },
+    "Which function is used to reposition the file pointer?": {
+        "options": {
+            "1": "filepos()",
+            "2": "rewind()",
+            "3": "fmove()",
+            "4": "fseek()"
+        },
+        "answer": "4"
+    },
+    "Which feature of OOP allows code reuse?": {
+        "options": {
+            "1": "Inheritance",
+            "2": "Encapsulation",
+            "3": "Polymorphism",
+            "4": "Abstraction"
+        },
+        "answer": "1"
+    },
+    "Which data structure uses FIFO order?": {
+        "options": {
+            "1": "Stack",
+            "2": "Queue",
+            "3": "Graph",
+            "4": "Hash table"
+        },
+        "answer": "2"
+    },
+    "Which data structure uses LIFO (Last In, First Out) order?": {
+        "options": {
+            "1": "queue",
+            "2": "stack",
+            "3": "array",
+            "4": "list"
+        },
+        "answer": "2"
+    },
+    "Which of the following functions is used to get input from the user in Python?": {
+        "options": {
+            "1": "get_input()",
+            "2": "input()",
+            "3": "scan()",
+            "4": "read()"
+        },
+        "answer": "2"
+    },
+    "Which operator is used to check if two values are equal in both value and type?": {
+        "options": {
+            "1": "==",
+            "2": "===",
+            "3": "=",
+            "4": "!="
+        },
+        "answer": "2"
+    },
+    "Which of the following is immutable?": {
+        "options": {
+            "1": "list",
+            "2": "dict",
+            "3": "set",
+            "4": "tuple"
+        },
+        "answer": "4"
+    },
+    "What is the result of bool('False')?": {
+        "options": {
+            "1": "False",
+            "2": "True",
+            "3": "None",
+            "4": "Error"
+        },
+        "answer": "2"
+    },
+    "x for x in range(10) if x % 2 == 0 and x % 3 == 0]": {
+        "options": {
+            "1": "[0, 6]",
+            "2": "[0, 2, 4, 6, 8]",
+            "3": "[3, 6, 9]",
+            "4": "[6, 12]"
+        },
+        "answer": "1"
+    },
+    "What is the output type of the map() function in Python 3?": {
+        "options": {
+            "1": "list",
+            "2": "map",
+            "3": "dict",
+            "4": "tuple"
+        },
+        "answer": "2"
+    },
+    "Which attribute is used to specify a tooltip text for an HTML element?": {
+        "options": {
+            "1": "tooltip",
+            "2": "title",
+            "3": "hint",
+            "4": "info"
+        },
+        "answer": "2"
+    },
+    "Which property is used to make a container flex in CSS?": {
+        "options": {
+            "1": "display: block",
+            "2": "display: inline",
+            "3": "display: flex",
+            "4": "display: grid"
+        },
+        "answer": "3"
+    },
+    "Which data structure is used in recursion?": {
+        "options": {
+            "1": "Queue",
+            "2": "Array",
+            "3": "Stack",
+            "4": "Tree"
+        },
+        "answer": "3"
+    },
+    "Which data type is used to store characters in C?": {
+        "options": {
+            "1": "int",
+            "2": "float",
+            "3": "char",
+            "4": "string"
+        },
+        "answer": "3"
+    },
+    "Min Heap build time from array?": {
+        "options": {
+            "1": "O(n)",
+            "2": "O(n log n)",
+            "3": "O(1)",
+            "4": "O(n²)"
+        },
+        "answer": "1"
+    },
+    "Which of the following is used to create an object in C++?": {
+        "options": {
+            "1": "class",
+            "2": "new",
+            "3": "object",
+            "4": "struct"
+        },
+        "answer": "2"
+    },
+    "Which method is used to add an element to the end of an array?": {
+        "options": {
+            "1": "add()",
+            "2": "push()",
+            "3": "append()",
+            "4": "insert()"
+        },
+        "answer": "3"
+    },
+    "Which method is used to find the length of a list in Python?": {
+        "options": {
+            "1": "len()",
+            "2": "length()",
+            "3": "size()",
+            "4": "count()"
+        },
+        "answer": "1"
+    },
+    "Which of the following data types is immutable in Python?": {
+        "options": {
+            "1": "List",
+            "2": "Dictionary",
+            "3": "Tuple",
+            "4": "Set"
+        },
+        "answer": "3"
+    },
+    "Which function converts an object to a string in Python?": {
+        "options": {
+            "1": "str",
+            "2": "repr",
+            "3": "print",
+            "4": "format"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a popular CSS utility-first framework?": {
+        "options": {
+            "1": "Foundation",
+            "2": "Materialize",
+            "3": "Bulma",
+            "4": "Tailwind CSS"
+        },
+        "answer": "4"
+    },
+    "What is the result of the expression 5 // 2 in Python?": {
+        "options": {
+            "1": "2.5",
+            "2": "3",
+            "3": "2",
+            "4": "Error"
+        },
+        "answer": "3"
+    },
+    "Which property is used to set the space between the lines of text?": {
+        "options": {
+            "1": "line-height",
+            "2": "text-spacing",
+            "3": "text-height",
+            "4": "font-spacing"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a valid variable name in Python?": {
+        "options": {
+            "1": "1_variable",
+            "2": "2_variable",
+            "3": "variable_1",
+            "4": "@variable"
+        },
+        "answer": "3"
+    },
+    "Which CSS pseudo-class targets an element being clicked?": {
+        "options": {
+            "1": ":hover",
+            "2": ":visited",
+            "3": ":active",
+            "4": ":focus"
+        },
+        "answer": "3"
+    },
+    "Which CSS unit is relative to the root element's font size?": {
+        "options": {
+            "1": "px",
+            "2": "rem",
+            "3": "em",
+            "4": "vh"
+        },
+        "answer": "3"
+    },
+    "What is the number of edges in a tree with n nodes?": {
+        "options": {
+            "1": "n",
+            "2": "n - 1",
+            "3": "n + 1",
+            "4": "n²"
+        },
+        "answer": "2"
+    },
+    "Which of the following is not a valid global attribute in HTML5?": {
+        "options": {
+            "1": "contenteditable",
+            "2": "contextmenu",
+            "3": "draggable",
+            "4": "background"
+        },
+        "answer": "4"
+    },
+    "Which of the following statements is true about Python?": {
+        "options": {
+            "1": "Python is a compiled language",
+            "2": "Python is a procedural language",
+            "3": "Python supports multi-threading",
+            "4": "Python does not support OOP"
+        },
+        "answer": "3"
+    },
+    "Which attribute is used to specify the relationship between a linked document and the current document?": {
+        "options": {
+            "1": "rel",
+            "2": "href",
+            "3": "link",
+            "4": "type"
+        },
+        "answer": "1"
+    },
+    "Which OOP principle hides internal details?": {
+        "options": {
+            "1": "Inheritance",
+            "2": "Abstraction",
+            "3": "Encapsulation",
+            "4": "Polymorphism"
+        },
+        "answer": "3"
+    },
+    "What is the output of this code?": {
+        "options": {
+            "1": "12",
+            "2": "11",
+            "3": "21",
+            "4": "30"
+        },
+        "answer": "1"
+    },
+    "Which built-in function returns the highest value in a list?": {
+        "options": {
+            "1": "max",
+            "2": "top",
+            "3": "high",
+            "4": "sort"
+        },
+        "answer": "1"
+    },
+    "Which CSS property sets the text color?": {
+        "options": {
+            "1": "color",
+            "2": "text-color",
+            "3": "font-color",
+            "4": "background-color"
+        },
+        "answer": "1"
+    },
+    "Which CSS property controls element visibility without removing it from the layout?": {
+        "options": {
+            "1": "display",
+            "2": "overflow",
+            "3": "opacity",
+            "4": "visibility"
+        },
+        "answer": "4"
+    },
+    "What context method wraps the root tree?": {
+        "options": {
+            "1": "Provider",
+            "2": "Consumer",
+            "3": "Wrapper",
+            "4": "Store"
+        },
+        "answer": "1"
+    },
+    "What is the correct CSS syntax to change text color to red?": {
+        "options": {
+            "1": "color: red;",
+            "2": "text-color: red;",
+            "3": "font-color: red;",
+            "4": "text: red;"
+        },
+        "answer": "1"
+    },
+    "Which CSS property is used to set the width of an element's border?": {
+        "options": {
+            "1": "border-size",
+            "2": "border-width",
+            "3": "border-height",
+            "4": "border-spacing"
+        },
+        "answer": "2"
+    },
+    "What is the output of Boolean(0) in JavaScript": {
+        "options": {
+            "1": "true",
+            "2": "false",
+            "3": "0",
+            "4": "undefined"
+        },
+        "answer": "2"
+    },
+    "Which of the following is a popular frontend framework?": {
+        "options": {
+            "1": "Django",
+            "2": "Flask",
+            "3": "Angular",
+            "4": "Laravel"
+        },
+        "answer": "3"
+    },
+    "Which function is used to find the length of a string in C?": {
+        "options": {
+            "1": "strlen()",
+            "2": "length()",
+            "3": "size()",
+            "4": "count()"
+        },
+        "answer": "1"
+    },
+    "What is the type of map object in Python 3?": {
+        "options": {
+            "1": "list",
+            "2": "generator",
+            "3": "iterable",
+            "4": "map"
+        },
+        "answer": "4"
+    },
+    "Which operator is used to allocate memory dynamically in C?": {
+        "options": {
+            "1": "malloc",
+            "2": "new",
+            "3": "alloc",
+            "4": "memcreate"
+        },
+        "answer": "1"
+    },
+    "Which header is required for strtok()?": {
+        "options": {
+            "1": "stringlib.h",
+            "2": "strlib.h",
+            "3": "string.h",
+            "4": "mem.h"
+        },
+        "answer": "3"
+    },
+    "Which CSS property is used to add shadow to an element?": {
+        "options": {
+            "1": "text-shadow",
+            "2": "box-shadow",
+            "3": "shadow",
+            "4": "element-shadow"
+        },
+        "answer": "2"
+    },
+    "Which data type is used to store a single character in C++?": {
+        "options": {
+            "1": "byte",
+            "2": "int",
+            "3": "string",
+            "4": "char"
+        },
+        "answer": "4"
+    },
+    "What is the type of range(5)?": {
+        "options": {
+            "1": "list",
+            "2": "range",
+            "3": "tuple",
+            "4": "generator"
+        },
+        "answer": "2"
+    },
+    "Which CSS property allows content to flow outside the element's box boundaries?": {
+        "options": {
+            "1": "visibility",
+            "2": "overflow",
+            "3": "z-index",
+            "4": "display"
+        },
+        "answer": "2"
+    },
+    "Which module is used for binary search in a sorted list?": {
+        "options": {
+            "1": "sort",
+            "2": "binsearch",
+            "3": "bisect",
+            "4": "binary"
+        },
+        "answer": "3"
+    },
+    "What is the purpose of the": {
+        "options": {
+            "1": "To create forms for user input",
+            "2": "To style the webpage",
+            "3": "To add videos",
+            "4": "To structure content"
+        },
+        "answer": "4"
+    },
+    "Which CSS unit is relative to the parent element’s font size?": {
+        "options": {
+            "1": "px",
+            "2": "%",
+            "3": "em",
+            "4": "rem"
+        },
+        "answer": "3"
+    },
+    "Which function is used to parse a string into an integer in JavaScript?": {
+        "options": {
+            "1": "parseInt()",
+            "2": "toInt()",
+            "3": "parse()",
+            "4": "convertInt()"
+        },
+        "answer": "1"
+    },
+    "How do you group multiple selectors in CSS?": {
+        "options": {
+            "1": "By separating with :",
+            "2": "By separating with ,",
+            "3": "By wrapping in {}",
+            "4": "By using &"
+        },
+        "answer": "2"
+    },
+    "Which built-in function returns object memory location?": {
+        "options": {
+            "1": "type()",
+            "2": "id()",
+            "3": "loc()",
+            "4": "mem()"
+        },
+        "answer": "2"
+    },
+    "What is the output of the main() function by default if not specified?": {
+        "options": {
+            "1": "1",
+            "2": "0",
+            "3": "-1",
+            "4": "Depends on compiler"
+        },
+        "answer": "2"
+    },
+    "What is the return type of main() in standard C?": {
+        "options": {
+            "1": "void",
+            "2": "int",
+            "3": "char",
+            "4": "float"
+        },
+        "answer": "2"
+    },
+    "Which function is used to read a line of text in C?": {
+        "options": {
+            "1": "read()",
+            "2": "scanf()",
+            "3": "fgets()",
+            "4": "getline()"
+        },
+        "answer": "3"
+    },
+    "Which loop is guaranteed to execute at least once?": {
+        "options": {
+            "1": "for",
+            "2": "while",
+            "3": "do-while",
+            "4": "foreach"
+        },
+        "answer": "3"
+    },
+    "Which function is used to open a file in C?": {
+        "options": {
+            "1": "open()",
+            "2": "fopen()",
+            "3": "fileopen()",
+            "4": "start()"
+        },
+        "answer": "2"
+    },
+    "Which of the following is a popular UI framework for building responsive websites?": {
+        "options": {
+            "1": "Bootstrap",
+            "2": "Flask",
+            "3": "Spring",
+            "4": "Django"
+        },
+        "answer": "1"
+    },
+    "What is a complete binary tree?": {
+        "options": {
+            "1": "All levels filled",
+            "2": "Only root present",
+            "3": "All leaf nodes connected",
+            "4": "Tree with only one child per node"
+        },
+        "answer": "1"
+    },
+    "Which one creates a shallow copy of a list a?": {
+        "options": {
+            "1": "a.clone()",
+            "2": "a.copy()",
+            "3": "a[:]",
+            "4": "Both b and c"
+        },
+        "answer": "4"
+    },
+    "What is a constructor in OOP?": {
+        "options": {
+            "1": "A function that returns a class",
+            "2": "A method that initializes a new object",
+            "3": "A function that destroys an object",
+            "4": "A method used to call parent class methods"
+        },
+        "answer": "2"
+    },
+    "Which value of position makes the element stay in place while scrolling?": {
+        "options": {
+            "1": "relative",
+            "2": "absolute",
+            "3": "sticky",
+            "4": "fixed"
+        },
+        "answer": "4"
+    },
+    "Which property is used to set the width of an element?": {
+        "options": {
+            "1": "element-width",
+            "2": "length",
+            "3": "size",
+            "4": "width"
+        },
+        "answer": "4"
+    },
+    "What is used to protect data in a class?": {
+        "options": {
+            "1": "Functions",
+            "2": "Loops",
+            "3": "Encapsulation",
+            "4": "Polymorphism"
+        },
+        "answer": "3"
+    },
+    "Which of the following is a valid keyword in C++?": {
+        "options": {
+            "1": "new",
+            "2": "create",
+            "3": "alloc",
+            "4": "malloc"
+        },
+        "answer": "1"
+    },
+    "Which attribute is used to specify a unique ID for an HTML element?": {
+        "options": {
+            "1": "class",
+            "2": "id",
+            "3": "name",
+            "4": "key"
+        },
+        "answer": "2"
+    },
+    "Which of the following is not a keyword in Python?": {
+        "options": {
+            "1": "assert",
+            "2": "yield",
+            "3": "void",
+            "4": "nonlocal"
+        },
+        "answer": "3"
+    },
+    "What is an instance of a class called?": {
+        "options": {
+            "1": "Method",
+            "2": "Object",
+            "3": "Module",
+            "4": "Function"
+        },
+        "answer": "2"
+    },
+    "Which of the following is NOT a valid Python collection type?": {
+        "options": {
+            "1": "List",
+            "2": "Dictionary",
+            "3": "Set",
+            "4": "array"
+        },
+        "answer": "4"
+    },
+    "Which attribute is used to specify where to open the linked document?": {
+        "options": {
+            "1": "href",
+            "2": "src",
+            "3": "target",
+            "4": "action"
+        },
+        "answer": "3"
+    },
+    "Which function is used to dynamically allocate memory in C?": {
+        "options": {
+            "1": "malloc()",
+            "2": "alloc()",
+            "3": "new",
+            "4": "calloc()"
+        },
+        "answer": "1"
+    },
+    "Which method is used to convert a string to uppercase in JavaScript?": {
+        "options": {
+            "1": "toUpperCase()",
+            "2": "toUpper()",
+            "3": "upperCase()",
+            "4": "makeUpper()"
+        },
+        "answer": "1"
+    },
+    "Which keyword is used to inherit a class?": {
+        "options": {
+            "1": "extends",
+            "2": "inherit",
+            "3": "derived",
+            "4": "public"
+        },
+        "answer": "1"
+    },
+    "Which CSS property is used to control the transparency of an element?": {
+        "options": {
+            "1": "visibility",
+            "2": "opacity",
+            "3": "filter",
+            "4": "transparency"
+        },
+        "answer": "2"
+    },
+    "Which operator is used for bitwise AND in C?": {
+        "options": {
+            "1": "&",
+            "2": "&&",
+            "3": "|",
+            "4": "^"
+        },
+        "answer": "1"
+    },
+    "What selector is used for a class in CSS?": {
+        "options": {
+            "1": "#classname",
+            "2": ".classname",
+            "3": "@classname",
+            "4": "classname"
+        },
+        "answer": "2"
+    },
+    "Which property changes the font of an element?": {
+        "options": {
+            "1": "text-font",
+            "2": "font-weight",
+            "3": "font-family",
+            "4": "font-size"
+        },
+        "answer": "3"
+    },
+    "What hook handles side-effects?": {
+        "options": {
+            "1": "useMemo",
+            "2": "useState",
+            "3": "useEffect",
+            "4": "useRef"
+        },
+        "answer": "3"
+    },
+    "Stable sort with O(n log n)?": {
+        "options": {
+            "1": "Quick",
+            "2": "Merge",
+            "3": "Heap",
+            "4": "Selection"
+        },
+        "answer": "2"
+    },
+    "Which of these does not return a pointer?": {
+        "options": {
+            "1": "malloc",
+            "2": "calloc",
+            "3": "strcpy",
+            "4": "sizeof"
+        },
+        "answer": "4"
+    },
+    "Which function is used to take input in C?": {
+        "options": {
+            "1": "read()",
+            "2": "scanf()",
+            "3": "input()",
+            "4": "gets()"
+        },
+        "answer": "2"
+    },
+    "What is the result of bool('False') in Python?": {
+        "options": {
+            "1": "False",
+            "2": "True",
+            "3": "SyntaxError",
+            "4": "TypeError"
+        },
+        "answer": "2"
+    },
+    "Which tag is used to define a multi-line text input field?": {
+        "options": {
+            "1": "input",
+            "2": "textarea",
+            "3": "text field",
+            "4": "text"
+        },
+        "answer": "2"
+    },
+    "Which function is used for binary representation?": {
+        "options": {
+            "1": "bin()",
+            "2": "binary()",
+            "3": "binval()",
+            "4": "hex()"
+        },
+        "answer": "1"
+    },
+    "Which property is used to change the text color of an element?": {
+        "options": {
+            "1": "font-color",
+            "2": "text-color",
+            "3": "color",
+            "4": "text-style"
+        },
+        "answer": "3"
+    },
+    "Which traversal visits nodes in left-root-right order ?": {
+        "options": {
+            "1": "Preorder",
+            "2": "Postorder",
+            "3": "Inorder",
+            "4": "Level order"
+        },
+        "answer": "3"
+    },
+    "Which CSS property controls the stacking order of elements?": {
+        "options": {
+            "1": "float",
+            "2": "z-index",
+            "3": "position",
+            "4": "order"
+        },
+        "answer": "2"
+    }
+}
