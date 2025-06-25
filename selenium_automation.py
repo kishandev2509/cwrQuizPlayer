@@ -134,7 +134,6 @@ def login(driver: WebDriver, url, username, password):
         return False
 
 def get_question(driver:WebDriver):
-    if 
     try:
         question = WebDriverWait(driver, 60).until(
             EC.presence_of_element_located(
@@ -271,7 +270,7 @@ def save_data_to_json(data, filename="scraped_questions_and_answers.json"):
         print(f"Error saving data to {filename}: {e}")
 
 
-if __name__ == "__main__":
+def start():
     LOGIN_URL = "https://codiny.codewithrandom.com/login"
     QUESTIONS_URL = "https://codiny.codewithrandom.com/battle"
 
