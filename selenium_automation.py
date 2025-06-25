@@ -105,10 +105,7 @@ def login(driver: WebDriver, url, username, password):
         try:
             tryAgain_button = WebDriverWait(driver, 5).until(
                 EC.presence_of_element_located(
-                    (
-                        By.XPATH,
-                        "/html/body/div/div[1]/main/div/div/div[2]/div[5]/div/button",
-                    )
+                    (By.XPATH, "/html/body/div/div[1]/main/div/div/div[2]/div[5]/div/button")
                 )
             )
 
@@ -118,10 +115,7 @@ def login(driver: WebDriver, url, username, password):
         except TimeoutException:
             table_head = WebDriverWait(driver, 5).until(
                 EC.presence_of_element_located(
-                    (
-                        By.XPATH,
-                        "/html/body/div/div[1]/main/div/div/div[2]/div[5]/div/table/thead/tr",
-                    )
+                    (By.XPATH, "/html/body/div/div[1]/main/div/div/div[2]/div[5]/div/table/thead/tr")
                 )
             )
 
@@ -133,46 +127,37 @@ def login(driver: WebDriver, url, username, password):
         print(f"Error during login: {e}")
         return False
 
-def get_question(driver:WebDriver):
+
+def get_question(driver: WebDriver):
+    try:
+        nextBattleButton = WebDriverWait(driver, 1).until(
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/button[2]"))
+        )
+        nextBattleButton.click()
+    except TimeoutException:
+        pass
     try:
         question = WebDriverWait(driver, 60).until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[2]/p",
-                )
-            )
+            EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[2]/p"))
         )
         option0 = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[1]/div/span/p",
-                )
+                (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[1]/div/span/p")
             )
         )
         option1 = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[2]/div/span/p",
-                )
+                (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[2]/div/span/p")
             )
         )
         option2 = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]/div/span/p",
-                )
+                (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]/div/span/p")
             )
         )
         option3 = WebDriverWait(driver, 5).until(
             EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[4]/div/span/p",
-                )
+                (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[4]/div/span/p")
             )
         )
         questionOptions = {
@@ -193,8 +178,6 @@ def get_question(driver:WebDriver):
             "option2": 3,
             "option3": 4,
         }
-
-    
 
 
 def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAnswers):
@@ -222,23 +205,25 @@ def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAn
     driver.get(questions_url)
     for _ in range(10):
         quesOp = get_question(driver)
-        if any([isinstance(element,str) for element in quesOp.values()]):
+        if any([isinstance(element, str) for element in quesOp.values()]):
             time.sleep(10)
             continue
-        print(*[element.text for element in quesOp.values()],sep="\n")
+        print(*[element.text for element in quesOp.values()], sep="\n")
         question = quesOp["question"].text
         if question not in questionsAndAnswers:
             answer = input("answer the question:\t")
-            qWithA = {"options":{
-                1:quesOp["option0"].text,
-                2:quesOp["option1"].text,
-                3:quesOp["option2"].text,
-                4:quesOp["option3"].text
-                },"answer":answer
+            qWithA = {
+                "options": {
+                    1: quesOp["option0"].text,
+                    2: quesOp["option1"].text,
+                    3: quesOp["option2"].text,
+                    4: quesOp["option3"].text,
+                },
+                "answer": answer,
             }
             questionsAndAnswers[question] = qWithA
             save_data_to_json(questionsAndAnswers)
-        
+
         answer = int(questionsAndAnswers[question]["answer"])
         match answer:
             case 1:
@@ -275,9 +260,9 @@ def start():
     QUESTIONS_URL = "https://codiny.codewithrandom.com/battle"
 
     questionsAndAnswers = {}
-    
+
     try:
-        with open('scraped_questions_and_answers.json', 'r', encoding="utf-8") as file:
+        with open("scraped_questions_and_answers.json", "r", encoding="utf-8") as file:
             questionsAndAnswers = json.load(file)
         print("JSON loaded successfully.")
     except FileNotFoundError:
@@ -285,7 +270,6 @@ def start():
     except json.JSONDecodeError:
         print("Invalid JSON format.")
 
-    
     driver: WebDriver | None = None
     try:
         driver = initialize_driver()
