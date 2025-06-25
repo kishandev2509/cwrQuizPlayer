@@ -84,9 +84,9 @@ def login(driver: WebDriver, url, username, password):
         # if yesIn_button.is_displayed:
         #     yesIn_button.click()
 
-        username_field = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, "email")))
-        password_field = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, "password")))
-        signIn_button = WebDriverWait(driver, 5).until(
+        username_field = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.ID, "email")))
+        password_field = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.ID, "password")))
+        signIn_button = WebDriverWait(driver, 1).until(
             EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[1]/div/div/div[2]/div/form/div/button"))
         )
 
@@ -103,7 +103,7 @@ def login(driver: WebDriver, url, username, password):
         time.sleep(5)  # Give some time for client-side rendering/redirects
 
         try:
-            tryAgain_button = WebDriverWait(driver, 5).until(
+            tryAgain_button = WebDriverWait(driver, 2).until(
                 EC.presence_of_element_located(
                     (By.XPATH, "/html/body/div/div[1]/main/div/div/div[2]/div[5]/div/button")
                 )
@@ -137,25 +137,25 @@ def get_question(driver: WebDriver):
     except TimeoutException:
         pass
     try:
-        question = WebDriverWait(driver, 60).until(
+        question = WebDriverWait(driver, 1).until(
             EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[2]/p"))
         )
-        option0 = WebDriverWait(driver, 5).until(
+        option0 = WebDriverWait(driver, 1).until(
             EC.presence_of_element_located(
                 (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[1]/div/span/p")
             )
         )
-        option1 = WebDriverWait(driver, 5).until(
+        option1 = WebDriverWait(driver, 1).until(
             EC.presence_of_element_located(
                 (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[2]/div/span/p")
             )
         )
-        option2 = WebDriverWait(driver, 5).until(
+        option2 = WebDriverWait(driver, 1).until(
             EC.presence_of_element_located(
                 (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]/div/span/p")
             )
         )
-        option3 = WebDriverWait(driver, 5).until(
+        option3 = WebDriverWait(driver, 1).until(
             EC.presence_of_element_located(
                 (By.XPATH, "/html/body/div/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[4]/div/span/p")
             )
@@ -204,9 +204,23 @@ def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAn
             return ""
     driver.get(questions_url)
     for _ in range(10):
+        try:
+            adButton = WebDriverWait(driver, 1).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "fc-list-item-button"))
+            )
+            adButton.click()
+            time.sleep(35)
+            closeBtn = WebDriverWait(driver,1).until(EC.presence_of_element_located((By.ID,"close-button")))
+            closeBtn.click()
+        except TimeoutException:
+            pass
         quesOp = get_question(driver)
         if any([isinstance(element, str) for element in quesOp.values()]):
-            time.sleep(10)
+            try:
+                emptyBtn = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]")))
+                emptyBtn.click()
+            except TimeoutException:
+                pass
             continue
         print(*[element.text for element in quesOp.values()], sep="\n")
         question = quesOp["question"].text
@@ -225,6 +239,7 @@ def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAn
             save_data_to_json(questionsAndAnswers)
 
         answer = int(questionsAndAnswers[question]["answer"])
+        print(answer)
         match answer:
             case 1:
                 quesOp["option0"].click()
@@ -236,7 +251,6 @@ def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAn
                 quesOp["option3"].click()
             case _:
                 pass
-        time.sleep(2)
     print("All questions answered.")
 
 
@@ -284,3 +298,6 @@ def start():
     finally:
         if driver:
             driver.quit()
+
+if __name__ == "__main__":
+    start()

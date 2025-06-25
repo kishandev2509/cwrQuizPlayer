@@ -6,7 +6,7 @@
             "3": "constant",
             "4": "const"
         },
-        "answer": "1"
+        "answer": "4"
     },
     "Which CSS property is used to create space between the border and the content of an element?": {
         "options": {
@@ -60,7 +60,7 @@
             "3": "iostream",
             "4": "stdlib.h"
         },
-        "answer": "1"
+        "answer": "3"
     },
     "Which of the following is a valid pointer declaration in C?": {
         "options": {
@@ -519,7 +519,7 @@
             "3": "em",
             "4": "vh"
         },
-        "answer": "3"
+        "answer": "2"
     },
     "What is the number of edges in a tree with n nodes?": {
         "options": {
@@ -1087,5 +1087,554 @@
             "4": "order"
         },
         "answer": "2"
+    },
+    "What unit is used for percentage-based widths in CSS?": {
+        "options": {
+            "1": "px",
+            "2": "em",
+            "3": "%",
+            "4": "rem"
+        },
+        "answer": "3"
+    },
+    "Which of the following operators is used for exponentiation in Python?": {
+        "options": {
+            "1": "^",
+            "2": "**",
+            "3": "%%",
+            "4": "//"
+        },
+        "answer": "2"
+    },
+    "Which function is used to display a message in an alert box in JavaScript?": {
+        "options": {
+            "1": "alert()",
+            "2": "popup()",
+            "3": "message()",
+            "4": "notify()"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a valid keyword in C?": {
+        "options": {
+            "1": "function",
+            "2": "define",
+            "3": "main",
+            "4": "return"
+        },
+        "answer": "4"
+    },
+    "Which symbol is used to end a statement in C?": {
+        "options": {
+            "1": ":",
+            "2": ".",
+            "3": ";",
+            "4": ","
+        },
+        "answer": "3"
+    },
+    "Which of the following statements about Python tuples is true?": {
+        "options": {
+            "1": "Tuples are mutable",
+            "2": "Tuples cannot contain duplicate elements",
+            "3": "Tuples are immutable",
+            "4": "uples cannot store mixed data types"
+        },
+        "answer": "3"
+    },
+    "What does fflush(stdin) do?": {
+        "options": {
+            "1": "Clears input buffer (platform-dependent)",
+            "2": "Flushes output buffer",
+            "3": "Initializes stdin",
+            "4": "Causes error in all compilers"
+        },
+        "answer": "1"
+    },
+    "What is the process of wrapping data and function together?": {
+        "options": {
+            "1": "Polymorphism",
+            "2": "Inheritance",
+            "3": "Abstraction",
+            "4": "Encapsulation"
+        },
+        "answer": "4"
+    },
+    "What is the default encoding used by Python for source code files?": {
+        "options": {
+            "1": "utf-16",
+            "2": "ascii",
+            "3": "utf-8",
+            "4": "ansi"
+        },
+        "answer": "3"
+    },
+    "Which format is commonly used for APIs?": {
+        "options": {
+            "1": "CSV",
+            "2": "JSON",
+            "3": "XML",
+            "4": "YAML"
+        },
+        "answer": "2"
+    },
+    "Which built-in function returns the memory address of an object in Python?": {
+        "options": {
+            "1": "type()",
+            "2": "id()",
+            "3": "hash()",
+            "4": "address()"
+        },
+        "answer": "2"
+    },
+    "What is GIL in Python?": {
+        "options": {
+            "1": "Global Interpreter Lock",
+            "2": "General Integer Logic",
+            "3": "Graphical Instance",
+            "4": "Gated Input Loop"
+        },
+        "answer": "1"
+    },
+    "Which CSS property is used to make an element appear above other elements?": {
+        "options": {
+            "1": "position",
+            "2": "z-index",
+            "3": "layer",
+            "4": "stack-index"
+        },
+        "answer": "2"
+    },
+    "Which CSS property is used to make text all uppercase?": {
+        "options": {
+            "1": "text-transform: uppercase",
+            "2": "text-case: uppercase",
+            "3": "font-case: uppercase",
+            "4": "letter-case: uppercase"
+        },
+        "answer": "1"
+    },
+    "What will 3 * 'abc' evaluate to?": {
+        "options": {
+            "1": "'abcabcabc'",
+            "2": "Error",
+            "3": "abc * 3",
+            "4": "None"
+        },
+        "answer": "1"
+    },
+    "Which JavaScript library is known for its virtual DOM feature?": {
+        "options": {
+            "1": "Vue.js",
+            "2": "Angular",
+            "3": "React",
+            "4": "Svelte"
+        },
+        "answer": "3"
+    },
+    "Which CSS property can cause a performance hit due to triggering layout recalculations?": {
+        "options": {
+            "1": "opacity",
+            "2": "transform",
+            "3": "width",
+            "4": "will-change"
+        },
+        "answer": "3"
+    },
+    "Which of the following is a popular frontend framework for building single-page applications?": {
+        "options": {
+            "1": "React",
+            "2": "Flask",
+            "3": "Laravel",
+            "4": "Node.js"
+        },
+        "answer": "1"
+    },
+    "Which function is used to terminate a program in C?": {
+        "options": {
+            "1": "exit()",
+            "2": "terminate()",
+            "3": "end()",
+            "4": "stop()"
+        },
+        "answer": "1"
+    },
+    "What does str.join(['a', 'b']) return?": {
+        "options": {
+            "1": "ab",
+            "2": "'a b'",
+            "3": "Error",
+            "4": "Depends on separator"
+        },
+        "answer": "4"
+    },
+    "Which expression returns True for NaN?": {
+        "options": {
+            "1": "math.isnan(float('nan'))",
+            "2": "float('nan') == float('nan')",
+            "3": "nan == nan",
+            "4": "nan is nan"
+        },
+        "answer": "1"
+    },
+    "What does scanf(\"%3s\", str); do?": {
+        "options": {
+            "1": "Takes entire string",
+            "2": "Takes first 3 characters",
+            "3": "Skips 3 characters",
+            "4": "Causes segmentation fault"
+        },
+        "answer": "2"
+    },
+    "Which CSS property controls the size of text?": {
+        "options": {
+            "1": "text-style",
+            "2": "font-size",
+            "3": "text-size",
+            "4": "size"
+        },
+        "answer": "2"
+    },
+    "Which attribute is used with\nto provide alternative text?": {
+        "options": {
+            "1": "title",
+            "2": "value",
+            "3": "alt",
+            "4": "src"
+        },
+        "answer": "3"
+    },
+    "Which of the following is used for styling React components?": {
+        "options": {
+            "1": "SASS",
+            "2": "Styled Components",
+            "3": "Tailwind CSS",
+            "4": "All of the above"
+        },
+        "answer": "4"
+    },
+    "What optimizes component rendering via shallow comparison?": {
+        "options": {
+            "1": "memo",
+            "2": "pure",
+            "3": "ref",
+            "4": "state"
+        },
+        "answer": "1"
+    },
+    "What will be the output of print(type([])) in Python?": {
+        "options": {
+            "1": "<class 'list'>",
+            "2": "<class 'tuple'>",
+            "3": "<class 'dict'>",
+            "4": "<class 'set'>"
+        },
+        "answer": "1"
+    },
+    "Which module is used for regular expressions in Python?": {
+        "options": {
+            "1": "regex",
+            "2": "match",
+            "3": "re",
+            "4": "string"
+        },
+        "answer": "3"
+    },
+    "Which of the following is NOT a valid Python keyword?": {
+        "options": {
+            "1": "return",
+            "2": "if",
+            "3": "def",
+            "4": "goto"
+        },
+        "answer": "4"
+    },
+    "Which principle is being violated if a child class depends on internal details of the parent class?": {
+        "options": {
+            "1": "Polymorphism",
+            "2": "Encapsulation",
+            "3": "Open/Closed Principle",
+            "4": "Inheritance"
+        },
+        "answer": "2"
+    },
+    "Which of the following is used to create a new object in Python?": {
+        "options": {
+            "1": "new()",
+            "2": "object()",
+            "3": "class()",
+            "4": "def()"
+        },
+        "answer": "2"
+    },
+    "What is the average time complexity of a lookup in a Python set?": {
+        "options": {
+            "1": "O(n)",
+            "2": "O(log n)",
+            "3": "O(1)",
+            "4": "O(n²)"
+        },
+        "answer": "3"
+    },
+    "Which library is mainly used for building user interfaces in React?": {
+        "options": {
+            "1": "Express",
+            "2": "React Router",
+            "3": "Redux",
+            "4": "Next.js"
+        },
+        "answer": "3"
+    },
+    "Which keyword is used to define a class in C++?": {
+        "options": {
+            "1": "define",
+            "2": "struct",
+            "3": "class",
+            "4": "object"
+        },
+        "answer": "3"
+    },
+    "What is the worst-case time for linear search?": {
+        "options": {
+            "1": "O(1)",
+            "2": "O(log n)",
+            "3": "O(n)",
+            "4": "O(n²)"
+        },
+        "answer": "3"
+    },
+    "Which of the following are mutable types?": {
+        "options": {
+            "1": "tuple",
+            "2": "string",
+            "3": "set",
+            "4": "int"
+        },
+        "answer": "3"
+    },
+    "What does document.querySelectorAll('div') return?": {
+        "options": {
+            "1": "A single div element",
+            "2": "A NodeList of div elements",
+            "3": "An array of div elements",
+            "4": "An HTMLCollection"
+        },
+        "answer": "2"
+    },
+    "Which of the following is a valid loop in C++?": {
+        "options": {
+            "1": "do-while",
+            "2": "repeat-until",
+            "3": "for-each",
+            "4": "until"
+        },
+        "answer": "1"
+    },
+    "What is the time complexity of binary search in a sorted array?": {
+        "options": {
+            "1": "O(n)",
+            "2": "O(log n)",
+            "3": "O(n²)",
+            "4": "O(1)"
+        },
+        "answer": "2"
+    },
+    "Which keyword is used to define a constant variable in C++?": {
+        "options": {
+            "1": "final",
+            "2": "const",
+            "3": "static",
+            "4": "define"
+        },
+        "answer": "2"
+    },
+    "Which of the following types are immutable in Python?": {
+        "options": {
+            "1": "List, Dictionary",
+            "2": "Tuple, String",
+            "3": "Set, List",
+            "4": "Dictionary, Set"
+        },
+        "answer": "2"
+    },
+    "What will be the output of the following expression bool('False') in Python?": {
+        "options": {
+            "1": "False",
+            "2": "True",
+            "3": "Error",
+            "4": "None"
+        },
+        "answer": "2"
+    },
+    "Which of the following is used to remove an element from a list in Python?": {
+        "options": {
+            "1": "remove()",
+            "2": "delete()",
+            "3": "discard()",
+            "4": "pop()"
+        },
+        "answer": "1"
+    },
+    "Which of the following is a valid access specifier in C++?": {
+        "options": {
+            "1": "private",
+            "2": "internal",
+            "3": "protected",
+            "4": "friend"
+        },
+        "answer": "4"
+    },
+    "Which module is used for serializing and deserializing Python objects?": {
+        "options": {
+            "1": "marshal",
+            "2": "json",
+            "3": "pickle",
+            "4": "struct"
+        },
+        "answer": "3"
+    },
+    "Which loop is more suitable for traversing arrays in C++?": {
+        "options": {
+            "1": "goto",
+            "2": "while",
+            "3": "for",
+            "4": "do-while"
+        },
+        "answer": "3"
+    },
+    "Which loop is guaranteed to run at least once?": {
+        "options": {
+            "1": "while",
+            "2": "for",
+            "3": "do-while",
+            "4": "none"
+        },
+        "answer": "3"
+    },
+    "Which of these operators is used to find the remainder of division in C?": {
+        "options": {
+            "1": "/",
+            "2": "%",
+            "3": "&",
+            "4": "//"
+        },
+        "answer": "2"
+    },
+    "Which property is used to change the font of an element?": {
+        "options": {
+            "1": "text-style",
+            "2": "font-family",
+            "3": "font-type",
+            "4": "text-family"
+        },
+        "answer": "2"
+    },
+    "Which built-in function returns object memory location ?": {
+        "options": {
+            "1": "type()",
+            "2": "id()",
+            "3": "loc()",
+            "4": "mem()"
+        },
+        "answer": "2"
+    },
+    "What is the output type of the zip() function in Python 3?": {
+        "options": {
+            "1": "List",
+            "2": "Tuple",
+            "3": "Dictionary",
+            "4": "Iterator"
+        },
+        "answer": "4"
+    },
+    "What does the init method do in Python?": {
+        "options": {
+            "1": "Initializes the class",
+            "2": "Initializes the object",
+            "3": "Initializes a list",
+            "4": "Initializes a function"
+        },
+        "answer": "2"
+    },
+    "What is the output of sizeof('A') in C?": {
+        "options": {
+            "1": "1",
+            "2": "2",
+            "3": "4",
+            "4": "Depends on compiler"
+        },
+        "answer": "4"
+    },
+    "What is the best module to create a heap?": {
+        "options": {
+            "1": "stacklib",
+            "2": "heapq",
+            "3": "heapds",
+            "4": "bisect"
+        },
+        "answer": "2"
+    },
+    "Which tag is used to group related options in a drop-down list?": {
+        "options": {
+            "1": "option",
+            "2": "fieldset",
+            "3": "optgroup",
+            "4": "group"
+        },
+        "answer": "3"
+    },
+    "What is the purpose of React.StrictMode?": {
+        "options": {
+            "1": "optimization",
+            "2": "debugging",
+            "3": "bundling",
+            "4": "styling"
+        },
+        "answer": "2"
+    },
+    "Which algorithm is used to sort in O(n log n) time ?": {
+        "options": {
+            "1": "Bubble Sort",
+            "2": "Insertion Sort",
+            "3": "Merge Sort",
+            "4": "Linear Sort"
+        },
+        "answer": "3"
+    },
+    "Which attribute in a": {
+        "options": {
+            "1": "method",
+            "2": "action",
+            "3": "type",
+            "4": "target"
+        },
+        "answer": "1"
+    },
+    "What will typeof NaN return in JavaScript?": {
+        "options": {
+            "1": "\"NaN\"",
+            "2": "\"number\"",
+            "3": "\"undefined\"",
+            "4": "\"object\""
+        },
+        "answer": "2"
+    },
+    "What does CSS stand for?": {
+        "options": {
+            "1": "Creative Style Sheets",
+            "2": "Computer Style Sheets",
+            "3": "Cascading Style Sheets",
+            "4": "Colorful Style Sheets"
+        },
+        "answer": "3"
+    },
+    "Which of the following supports runtime polymorphism?": {
+        "options": {
+            "1": "Function overloading",
+            "2": "Operator overloading",
+            "3": "Method overriding using inheritance",
+            "4": "Data hiding"
+        },
+        "answer": "3"
     }
 }
