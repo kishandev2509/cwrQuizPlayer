@@ -168,9 +168,9 @@ def get_question(driver: WebDriver):
             "option3": option3,
         }
         return questionOptions
-    except Exception as e:
-        print(f"Timed out waiting for questions to load: {e}")
-        print("The page might be empty or the locator needs adjustment.")
+    except Exception:
+        # print(f"Timed out waiting for questions to load: {e}")
+        # print("The page might be empty or the locator needs adjustment.")
         return {
             "question": "default",
             "option0": 1,
@@ -205,19 +205,35 @@ def answer_questions(driver: WebDriver, questions_url, login_url, questionsAndAn
     driver.get(questions_url)
     for _ in range(10):
         try:
-            adButton = WebDriverWait(driver, 1).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "fc-list-item-button"))
+            adButton = WebDriverWait(driver, 2).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, ".fc-list-item-button.fc-rewarded-ad-button"))
             )
             adButton.click()
+            WebDriverWait(driver, 2).until(
+                EC.url_contains("#goog_fullscreen_ad")
+            )
             time.sleep(35)
-            closeBtn = WebDriverWait(driver,1).until(EC.presence_of_element_located((By.ID,"close-button")))
-            closeBtn.click()
+            try:
+                closeBtn = WebDriverWait(driver, 1).until(
+                    EC.presence_of_element_located((By.ID, "close-button"))
+                    or EC.presence_of_element_located((By.XPATH, "/html/body/div/div/div[1]/div[1]"))
+                )
+                closeBtn.click()
+                # WebDriverWait(driver, 2).until(
+                #     EC.url_changes("https://codiny.codewithrandom.com/battle#goog_fullscreen_ad")
+                # )
+            except TimeoutException:
+                driver.get("https://codiny.codewithrandom.com/battle")
         except TimeoutException:
             pass
         quesOp = get_question(driver)
         if any([isinstance(element, str) for element in quesOp.values()]):
             try:
-                emptyBtn = WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]")))
+                emptyBtn = WebDriverWait(driver, 1).until(
+                    EC.presence_of_element_located(
+                        (By.XPATH, "/html/body/div[1]/div[1]/main/div[2]/div[3]/div/div[2]/div[3]/button[3]")
+                    )
+                )
                 emptyBtn.click()
             except TimeoutException:
                 pass
@@ -298,6 +314,7 @@ def start():
     finally:
         if driver:
             driver.quit()
+
 
 if __name__ == "__main__":
     start()

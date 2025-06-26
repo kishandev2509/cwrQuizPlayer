@@ -1636,5 +1636,14 @@
             "4": "Data hiding"
         },
         "answer": "3"
+    },
+    "BST delete avg-case time?": {
+        "options": {
+            "1": "O(n)",
+            "2": "O(log n)",
+            "3": "O(1)",
+            "4": "O(n²)"
+        },
+        "answer": "2"
     }
 }
